@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+//        var elem = document.getElementsByClassName('.www')
+////        var elems = document.querySelectorAll('.www');
+////        for (var i = 0; i < elems.length; i++) {
+////            elems[i].innerHTML = '!!!';
+////        }
+//        alert(elem.length);
+
+    </script>
+</head>
+<body>
+<div class="article">Статья</div>
+<div class="article">Статья</div>
+<div class="article">Статья</div>
+<div class="article">Статья</div>
+<div class="article">Статья</div>
+<div class="long article">Длинная статья</div>
+
+<script>
+    var articles = document.getElementsByClassName('article');
+    alert( articles.length ); // 2, найдёт оба элемента
+    for(var i = 0;i<articles.length;i++){
+        articles[i].innerHTML = 'hello';
+    }
+</script>
+<!--<p class="www">Текст абзаца.</p>-->
+<!--<p class="www">Текст абзаца.</p>-->
+<!--<p class="www">Текст абзаца.</p>-->
+<!--<p>Текст абзаца.</p>-->
+</body>
+</html>
