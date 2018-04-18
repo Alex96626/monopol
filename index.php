@@ -8,9 +8,8 @@
 
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
-    <script src="index.js"></script>
-    <script src="cubes.js"></script>
-    <script src="map.js"></script>
+    <script src="main.js"></script>
+    <script src="name_block.js"></script>
 
 </head>
 

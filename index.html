@@ -3,34 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script>
-//        var elem = document.getElementsByClassName('.www')
-////        var elems = document.querySelectorAll('.www');
-////        for (var i = 0; i < elems.length; i++) {
-////            elems[i].innerHTML = '!!!';
-////        }
-//        alert(elem.length);
+    <style>
+        .block{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background: #28FD04;
+        }
+        .child{
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            background: black;
+            margin:  25%;
+        }
 
-    </script>
+    </style>
+
+    <script src="https://cdn.polyfill.io/v1/polyfill.js?features=Element.prototype.append,Element.prototype.after"></script>
+
 </head>
 <body>
-<div class="article">Статья</div>
-<div class="article">Статья</div>
-<div class="article">Статья</div>
-<div class="article">Статья</div>
-<div class="article">Статья</div>
-<div class="long article">Длинная статья</div>
+
+
+
+<div  id="blod1" class="block" ><div id="reb" style="width: 50px;height: 50px;background: red"></div></div>
+<div class="block" id="blod2"></div>
+<div class="block" id="blod3"></div>
+<div class="block" id="blod4" ></div>
+<button onclick="bar()">Добавить</button>
+<button onclick="go()">Переместить</button>
 
 <script>
-    var articles = document.getElementsByClassName('article');
-    alert( articles.length ); // 2, найдёт оба элемента
-    for(var i = 0;i<articles.length;i++){
-        articles[i].innerHTML = 'hello';
+
+    function bar() {
+        var elem = document.createElement("div")
+        elem.className = 'child';
+        document.getElementById("blok1").appendChild(elem)
+        document.querySelector('.child').innerHTML = 'Hello';
+        return elem;
     }
+    var ideshnik =1;
+    function go() {
+        ideshnik++;
+        var reb = document.getElementById('reb');
+        var block2 = document.getElementsByClassName('blod2');
+        console.log(reb)
+        console.log(block2);
+        var idiii = 'blod'+ ideshnik;
+        console.log(idiii);
+        console.log(ideshnik)
+        document.getElementById("blod" + ideshnik).append(reb);
+
+        console.log(document.getElementById("blod" + ideshnik));
+if(ideshnik >=4){
+    document.getElementById("blod1").appendChild(reb);
+    ideshnik = 1 ;
+    go();
+}
+    }
+
 </script>
-<!--<p class="www">Текст абзаца.</p>-->
-<!--<p class="www">Текст абзаца.</p>-->
-<!--<p class="www">Текст абзаца.</p>-->
-<!--<p>Текст абзаца.</p>-->
+
 </body>
+
 </html>

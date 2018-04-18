@@ -1,17 +1,18 @@
 var number_id_block = 0;
-
-var name_block =  {
-    sity:{
+var namePlayer;
+var name_block = {
+    sity: {
         brown_block: {
-                first : "Санкт-Петербург",
-                second : "Перьмь",
-                third : "Тюмень"
-            },
+            first: {name: "Piter", statusBye: false, namePlayer: namePlayer},
+            second: "Перьмь",
+            third: "Тюмень"
+        },
         yellow_block: {
-            first : "Казань",
-            second : "Гомель",
-            third : "Рязань"
+            first: "Казань",
+            second: "Гомель",
+            third: "Рязань"
         }
-    }
 
+
+    }
 }

@@ -1,15 +1,12 @@
-<div>
+
 <?php
-for($i=0;$i<=8;$i++){
-   ?>
+$doc = new DOMDocument;
 
-        <div style=' text-align: center; width: 100px;height: 100px;background: red;border: 1px solid black'></div>
-<?php
+$headNode = $doc->createElement("head");
+$doc->appendChild($headNode);
 
-}
+$titleNode = $doc->createElement("title");
+$headNode->appendChild($titleNode);
 
-if($i ==2 && $i==4){
-
-}
+echo $doc->saveXML();
 ?>
-</div>

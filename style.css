@@ -82,14 +82,14 @@
      background: orange;
      height: 25%;
      width: 100%;
-    margin:  0 0 4.5em 0;
+    /*margin:  0 0 4.5em 0;*/
  }
 .brown_sity_block{
     border: 1px solid white;
     background: brown;
     height: 25%;
     width: 100%;
-    margin:  0 0 4.5em 0;
+    /*margin:  0 0 4.5em 0;*/
 }
 .center_block_wrapp{
     width: 919px;
@@ -103,13 +103,18 @@
     width: 100px;
     height:50px;
     background: orangered;
+    position: absolute;
+    top: 500px;
+    left: 500px;
+
 
 }
 #player_1{
     width: 25px;
     height: 25px;
     background: red;
-    position: relative;
-    left: 1060px;
-    top: 50px;
+    /*margin: 25%;*/
+    /*z-index: 100;*/
+    position: absolute;
+
 }

@@ -1,4 +1,4 @@
-<button class="roll" onclick="Roll()">Кубики</button>
+<button class="roll" onclick="Player()">Кубики</button>
 <!--рисукм поля моноолии -->
 
     <!--top line-->
@@ -31,10 +31,6 @@
         <?php } ?>
     </div >
 
-
-
-
-
     <!--right line-->
     <div class='right_line_wrapp'>
         <?php  $key = 30; for($i=0;$i<=9;$i++){ $key++ ?>
@@ -53,10 +49,9 @@
     <!--bottom line-->
     <div  class='bot_line_wrapp'>
         <?php
-        $key =12;
-
-        for($i=0;$i<=10;$i++){ $key-- ?>
+        $key =12; for($i=0;$i<=10;$i++){ $key-- ?>
             <div id ='number_block_<?php print $key?>' class='bot_line_block block'>
+
 
                 <!-- создание  бирюзовых блоков городов-->
                 <?php if($i == 1 || $i == 2 || $i == 4){?>
@@ -69,5 +64,8 @@
         <?php } ?>
     </div>
     <div class="center_block_wrapp"><img src="">МОНОПОЛИЯ</div>
-    <div id="player_1"></div>
+<!--    <div id="player_1"></div>-->
+<script>
+    createBlock();
+</script>
 
