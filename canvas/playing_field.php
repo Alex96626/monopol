@@ -1,5 +1,5 @@
 <button class="roll" onclick="Player()">Кубики</button>
-<!--рисукм поля моноолии -->
+<!--рисуем поля моноолии -->
 
     <!--top line-->
     <div class='top_line_wrapp'>
@@ -51,8 +51,6 @@
         <?php
         $key =12; for($i=0;$i<=10;$i++){ $key-- ?>
             <div id ='number_block_<?php print $key?>' class='bot_line_block block'>
-
-
                 <!-- создание  бирюзовых блоков городов-->
                 <?php if($i == 1 || $i == 2 || $i == 4){?>
                     <div class='turquoise_sity_block'></div>
@@ -67,5 +65,7 @@
 <!--    <div id="player_1"></div>-->
 <script>
     createBlock();
+
+
 </script>
 

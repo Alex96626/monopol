@@ -68,14 +68,14 @@
      background: orange;
      height: 100%;
      width: 25%;
-    margin:  0 0 0 4.5em;
+    margin:  0 0 0 auto;
  }
 .pink_situ_block{
     border: 1px solid white;
     background: deeppink;
     height: 100%;
     width: 25%;
-    margin:  0 0 0 4.5em;
+    margin:  0 0 0 auto;
 }
 .turquoise_sity_block{
      border: 1px solid white;
